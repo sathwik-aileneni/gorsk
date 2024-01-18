@@ -9,6 +9,7 @@ import (
 var (
 	// ErrGeneric is used for testing purposes and for errors handled later in the callstack
 	ErrGeneric = errors.New("generic error")
+	ErrNotGeneric = errors.New("Probably not generic error")
 
 	// ErrBadRequest (400) is returned for bad request (validation)
 	ErrBadRequest = echo.NewHTTPError(400)
